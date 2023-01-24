@@ -22,10 +22,11 @@ class Collapse extends React.Component {
       const isShowing = cn('collapse',{
         'show': true
       })
+      const innerCN = cn('card card-body')
 
       return (
         <div className={isShowing}>
-          <div className="card card-body">
+          <div className={innerCN}>
             {this.props.text}
           </div>
         </div>
